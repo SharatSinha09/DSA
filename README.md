@@ -8,7 +8,7 @@
 ### Stacks & Queues
 ### Trees & Graphs
 ### Heaps & Hashing
-
+___
 ## Algorithms
 ### Sorting (Bubble, Merge, Quick, etc.)
 ### Searching (Binary Search, DFS, BFS, etc.)

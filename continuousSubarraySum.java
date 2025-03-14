@@ -11,12 +11,9 @@ public class continuousSubarraySum {
         for(int i=1; i<pre.length; i++){
             pre[i] = pre[i-1] + nums[i-1];
         }
-        for(int i=0; i<n-1; i++){
-            for(int j=i+1; j<n; j++){
-                if(k != 0 && (pre[j+1]- pre[i]) % k == 0){
-                    return true;
-                }
-                if(k == 0 && pre[j+1]- pre[i] == 0){
+        for(int i=0; i<n; i++){
+            for(int j=i+2; j<n+1; j++){
+                if((pre[j]- pre[i]) % k == 0){
                     return true;
                 }
             }

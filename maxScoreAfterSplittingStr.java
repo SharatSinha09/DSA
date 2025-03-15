@@ -1,3 +1,4 @@
+//Leetcode 1422
 public class maxScoreAfterSplittingStr {
     public static void main(String[] args) {
         String s = "011101";

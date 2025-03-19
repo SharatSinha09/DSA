@@ -1,3 +1,4 @@
+//Leetcode 1295
 public class evenDigits {
     public static void main(String[] args) {
         int[] nums = {12,345,2,6,7896};

@@ -1,3 +1,4 @@
+//Leetcode 1662
 public class strEquivalent {
     public static void main(String[] args) {
         String[] word1 = {"a", "bc"};

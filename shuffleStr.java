@@ -1,3 +1,4 @@
+//Leetcode 1528
 class shuffleStr{
     public static void main(String[] args) {
         int[] indices = {4,5,6,7,0,2,1,3};

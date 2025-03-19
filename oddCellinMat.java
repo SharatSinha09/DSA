@@ -1,3 +1,4 @@
+//Leetcode 1252
 public class oddCellinMat {
     public static void main(String[] args) {
         int m = 2;

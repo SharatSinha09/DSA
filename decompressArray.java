@@ -1,3 +1,4 @@
+//Leetcode 1313
 public class decompressArray {
     public static void main(String[] args) {
         int[] nums = {1,2,3,4};

@@ -11,7 +11,7 @@ public class minSizeSubArraySum {
         while (j < n) {
             sum += nums[j];
             while (sum >= target) {
-                minLen = Math.min(minLen, j - 1 + 1);
+                minLen = Math.min(minLen, j - i + 1);
                 sum -= nums[i++];
             }
             j++;
@@ -24,11 +24,13 @@ public class minSizeSubArraySum {
         System.out.println("Enter size of array : ");
         int n = Integer.parseInt(br.readLine());
         int[] nums = new int[n];
+        System.out.println("Enter " + n + " number :");
         for (int i = 0; i < n; i++) {
             nums[i] = Integer.parseInt(br.readLine());
         }
+        System.out.println("Enter the target : ");
         int target = Integer.parseInt(br.readLine());
 
-        System.out.println(minWindow(n, nums, target));
+        System.out.println("Result : " + minWindow(n, nums, target));
     }
 }

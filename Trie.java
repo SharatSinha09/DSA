@@ -15,6 +15,7 @@ public class Trie {
         root = new tNode();
     }
 
+    // Insert
     public void insert(String word) {
         tNode temp = root;
         for (int i = 0; i < word.length(); i++) {

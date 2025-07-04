@@ -1,14 +1,17 @@
+
+//CSES
 import java.util.*;
+
 public class gorillaExam {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while(t-- > 0){
+        while (t-- > 0) {
             int n = sc.nextInt();
             int k = sc.nextInt();
             int[] arr = new int[n];
             HashMap<Integer, Integer> mp = new HashMap<>();
-            for(int i=0; i<n; i++){
+            for (int i = 0; i < n; i++) {
                 arr[i] = sc.nextInt();
                 mp.put(arr[i], mp.getOrDefault(arr[i], 0) + 1);
             }
@@ -16,12 +19,12 @@ public class gorillaExam {
             sortedMp.sort(Comparator.comparingInt(Map.Entry::getValue));
             int unique = sortedMp.size();
             int removed = 0;
-            for(Map.Entry<Integer, Integer> entry : sortedMp){
+            for (Map.Entry<Integer, Integer> entry : sortedMp) {
                 int freq = entry.getValue();
-                if(removed+freq <= k){
-                    removed+=freq;
+                if (removed + freq <= k) {
+                    removed += freq;
                     unique--;
-                }else{
+                } else {
                     break;
                 }
             }
